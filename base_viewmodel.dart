@@ -127,6 +127,7 @@ mixin BusyAndErrorStateHelper on ChangeNotifier {
     }
   }
 
-  /// Bir gelecek bir hatayı fırlattığında çağrılan fonksiyon
+  /// Future bir hatayı fırlattığında çağrılan fonksiyon
+  /// Override edilerek hatanın kontrolü sağlanabilir
   void onFutureError(dynamic error, Object? key) {}
 }
